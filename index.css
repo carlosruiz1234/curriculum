@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+}
+
+
+.sidebar {
+  width: 35%;               
+  background: #860000;       
+  color: #fff;             
+  padding: 20px;
+  display: flex;
+  flex-direction: column;    
+  align-items: center;      
+  box-sizing: border-box;
+}
+.sidebar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.sidebar p {
+  word-wrap: break-word;     
+  white-space: normal;    
+  max-width: 100%;         
+  text-align: center;      
+  margin: 5px 0;
+}
+
+.seccion-contacto{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.seccion-contacto p{
+
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 200px;
+  text-align: center ;
+}
+
+.seccion-titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 6px;
+  width: 100%;
+}
+.container {
+  display: flex; 
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffe7e7;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.sidebar ul {
+  width: 100%;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.main {
+  width: 100%;
+  padding: 30px;
+}
+
+
+.main h3 {
+  color: #720000;
+  margin-top: 25px;
+  border-bottom: 2px solid #720000;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.informacion {
+  margin-bottom: 50px;
+}
+
+.informacion h4 {
+  margin: 5px 0;
+  color: #720000;
+  border-bottom: 3px solid;
+  
+
+}
+
+.main h1 {
+  color: #720000;
+  margin: 0;
+  font-size: 32px;
+}
+
+.footer{
+  background-color:#860000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size:14px;
+  width: 100;
+  margin-top: 30px;
+  position: relative;
+}
+.información{
+    padding: 0;
+    margin: 0;
+}
+
+.habilidad {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+
+.barra {
+    position: relative;
+    width: 110px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+.barra:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--porcentaje, 0%);
+    background-color: #2c3e50;
+    border-radius: 10px;
+    animation: llenarBarra 2s ease-out forwards;
+}
+     
+.nivel-1 { --porcentaje: 90%; }
+.nivel-2 { --porcentaje: 80%; }
+.nivel-3 { --porcentaje: 85%; }
+.nivel-4 { --porcentaje: 95%; }
+
+
+
+@keyframes llenarBarra {
+  from { width: 0; }
+  to { width: var(--porcentaje); }
+}
+
